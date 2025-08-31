@@ -7,7 +7,7 @@ public class ComprasCliente {
     public static void main(String[] args) {
         // Declaramos las variables
         String nombre;
-        double compra1, compra2, compra3, total, promedio;
+        double compra1, compra2, compra3, compra4, total, promedio;
 
         Scanner lectura = new Scanner(System.in);
 
@@ -23,10 +23,12 @@ public class ComprasCliente {
 
         System.out.print("Ingrese el monto de la compra 3: ");
         compra3 = lectura.nextDouble();
-
+        
+        System.out.print("Ingrese el monto de la compra 4: ");
+        compra4 = lectura.nextDouble();
         // Calculamos
-        total = compra1 + compra2 + compra3;
-        promedio = total / 3;
+        total = compra1 + compra2 + compra3 + compra4;
+        promedio = total / 4;
 
         System.out.println("\n--- Resultados ---");
         System.out.println("Cliente: " + nombre);
